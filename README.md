@@ -22,17 +22,18 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
 ## usersテーブル
-* |Column|Type|Options|
+  |Column|Type|Options|
   |------|----|-------|
   |name|string|null:false|
   |e-mail|string|null:false|
   |password|string|null:false|
   |sign_in_count|integer|defult:0,null:false|
 
-##association
--belong_to :group
--belong_to :messerge
+## association
+   -belong_to :group
+   -belong_to :messerge
 
 ## groupsテーブル
   |Column|Type|Options|
@@ -40,11 +41,11 @@ Things you may want to cover:
   |user_id|integer|null:false,foreign_key:true|
   |comments_id|integer|null:falae,foreign_key:true|
 
-  ##association
+## association
   -belong_to :user
   -belong_to :messerge
 
-##messergeテーブル
+## messergeテーブル
   |Column|Type|Options|
   |------|----|-------|
   |user_id|integer|null:false foreign_key :true|
@@ -52,6 +53,6 @@ Things you may want to cover:
   |image|string|
   |text|text|
 
-  ##association
-  -belong_to :user
-  -belong_to :messerge
+## association
+   -belong_to :user
+   -belong_to :messerge
