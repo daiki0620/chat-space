@@ -22,14 +22,36 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
+## usersテーブル
 * |Column|Type|Options|
   |------|----|-------|
-  |user_id|integer|null: false, foreign_key: true|
-  |group_id|integer|null: false, foreign_key: true|
-  |messerge_id|integer|null: false, foreign_key: true|
+  |name|string|null:false|
+  |e-mail|string|null:false|
+  |password|string|null:false|
+  |sign_in_count|integer|defult:0,null:false|
 
-## Association
-- belongs_to :group
-- belongs_to :user
-  belongs_to :messerge
+##association
+-belong_to :group
+-belong_to :messerge
+
+## groupsテーブル
+  |Column|Type|Options|
+  |------|----|-------|
+  |user_id|integer|null:false,foreign_key:true|
+  |comments_id|integer|null:falae,foreign_key:true|
+
+  ##association
+  -belong_to :user
+  -belong_to :messerge
+
+##messergeテーブル
+  |Column|Type|Options|
+  |------|----|-------|
+  |user_id|integer|null:false foreign_key :true|
+  |group_id|integer|null:false foreign_key :true|
+  |image|string|
+  |text|text|
+
+  ##association
+  -belong_to :user
+  -belong_to :messerge
