@@ -10,6 +10,7 @@
 ## association
   - has_many :messages
   - has_many :groupusers
+  - has_many :groups  through :groupusers
 
 ## groupsテーブル
  |Column|Type|Options|
@@ -19,6 +20,7 @@
 ## association
   - has_many :messerges
   - has_many :groupuser
+  - has_many :users  through :groupusers
 
 ## messergeテーブル
  |Column|Type|Options|
