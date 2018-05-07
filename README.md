@@ -7,8 +7,9 @@
     |sign_in_count|integer|defult:0,null:false|
 
 ## association
-  - has_many :messerge
-  - has_many :group
+  - has_many :messages
+  - has_many :groups
+  - has_many :groupusers
 
 ## groupsテーブル
     |Column|Type|Options|
@@ -16,8 +17,9 @@
     |name|string|null:false|
 
 ## association
-  - has_many :messerge
-  - has_many :user
+  - has_many :messerges
+  - has_many :users
+  - has_many :group
 
 ## messergeテーブル
     |Column|Type|Options|
@@ -31,12 +33,12 @@
   - belong_to :user
   - belong_to :group
 
-## middleテーブル
+## groupuserテーブル
     |Column|Type|Options|
     |------|----|-------|
     |users_id|integer|null:false,foreign_key:true|
     |groups_id|integer|null:false,foreign_key:true|
 
-##  association
+## association
  - belong_to :user
  - belong_to :group
