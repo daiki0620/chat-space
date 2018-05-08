@@ -23,8 +23,8 @@
 ## messagesテーブル
  |Column|Type|Options|
  |------|----|-------|
- |user|reference|null: false, foreign_key: true|
- |group|reference|null: false, foreign_key: true|
+ |user|references|null: false, foreign_key: true|
+ |group|references|null: false, foreign_key: true|
  |image|string|
  |text|text|
 
@@ -35,8 +35,8 @@
 ## group_usersテーブル
  |Column|Type|Options|
  |------|----|-------|
- |user|reference|null: false, foreign_key: true|
- |group|refernce|null: false, foreign_key: true|
+ |user|references|null: false, foreign_key: true|
+ |group|refernces|null: false, foreign_key: true|
 
 ## association
  - belong_to :user
