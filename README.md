@@ -36,7 +36,7 @@
  |Column|Type|Options|
  |------|----|-------|
  |user|references|null: false, foreign_key: true|
- |group|refernces|null: false, foreign_key: true|
+ |group|references|null: false, foreign_key: true|
 
 ## association
  - belong_to :user
