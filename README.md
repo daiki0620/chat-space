@@ -2,6 +2,7 @@
  |Column|Type|Options|
  |------|----|-------|
  |name|string|null: false, add_index: true|
+ |email|string|null: false, unipue: true|
  |password|string|null: false|
 
 ## association
@@ -34,8 +35,8 @@
 ## group_usersテーブル
  |Column|Type|Options|
  |------|----|-------|
- |reference_users|integer|null: false, foreign_key: true|
- |reference_groups|integer|null: false, foreign_key: true|
+ |user|reference|null: false, foreign_key: true|
+ |group|refernce|null: false, foreign_key: true|
 
 ## association
  - belong_to :user
