@@ -1,9 +1,8 @@
 ## usersテーブル
  |Column|Type|Options|
  |------|----|-------|
+ |name|string|null: false|
  |password|string|null: false|
- |encrypted_password|string|null: false|
- |sign_in_count|integer|defult:0, null:false|
 
 ## association
   - has_many :messages
