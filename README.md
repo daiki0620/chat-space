@@ -1,7 +1,7 @@
 ## usersテーブル
  |Column|Type|Options|
  |------|----|-------|
- |name|string|null: false, index|
+ |name|string|null: false, add_index: true|
  |password|string|null: false|
 
 ## association
@@ -22,8 +22,8 @@
 ## messagesテーブル
  |Column|Type|Options|
  |------|----|-------|
- |users|reference|integer|null: false, foreign_key: true|
- |groups|reference|integer|null: false, foreign_key: true|
+ |user|reference|null: false, foreign_key: true|
+ |group|reference|null: false, foreign_key: true|
  |image|string|
  |text|text|
 
@@ -31,7 +31,7 @@
   - belong_to :user
   - belong_to :group
 
-## group_userテーブル
+## group_usersテーブル
  |Column|Type|Options|
  |------|----|-------|
  |reference_users|integer|null: false, foreign_key: true|
