@@ -2,7 +2,7 @@
  |Column|Type|Options|
  |------|----|-------|
  |name|string|null: false, add_index: true|
- |email|string|null: false, unipue: true|
+ |email|string|null: false, unique: true|
  |password|string|null: false|
 
 ## association
