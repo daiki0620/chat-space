@@ -1,7 +1,7 @@
 ## usersテーブル
  |Column|Type|Options|
  |------|----|-------|
- |name|string|null: false|
+ |name|string|null: false, index|
  |password|string|null: false|
 
 ## association
@@ -15,15 +15,15 @@
  |name|string|null: false|
 
 ## association
-  - has_many :messerges
-  - has_many :group_user
+  - has_many :messages
+  - has_many :group_users
   - has_many :users, through: group_users
 
-## messergeテーブル
+## messagesテーブル
  |Column|Type|Options|
  |------|----|-------|
- |reference_users|integer|null: false,foreign_key: true|
- |reference_groups|integer|null false,foreign_key: true|
+ |users|reference|integer|null: false, foreign_key: true|
+ |groups|reference|integer|null: false, foreign_key: true|
  |image|string|
  |text|text|
 
