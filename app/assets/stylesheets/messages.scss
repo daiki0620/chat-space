@@ -1,31 +1,32 @@
 $group : #2f3e51;
 $right: #eeeeee;
 .header{
- width: 100%;
- height: 80px;
- position: fixed;
- top:0;
- z-index: 1;
- background: white;
- .news{
-  height: 20px;
   width: 100%;
-  background: #38AEF0;
+  height: 80px;
   position: fixed;
   top:0;
-  z-index: 40;
-  .title{
-   height: 20px;
-   width: 200px;
-   float: left;
-   position: absolute;
-   top: 35px;
-   left: 240px;
-   display: flex;
-   align-items: center;
+  z-index: 1;
+  background: white;
+  .news{
+    height: 20px;
+    width: 100%;
+    background: #38AEF0;
+    position: fixed;
+    top:0;
+    z-index: 40;
+    .title{
+      height: 20px;
+      width: 200px;
+      float: left;
+      position: absolute;
+      top: 35px;
+      left: 240px;
+      display: flex;
+      align-items: center;
+  }
  }
 }
- .edit{
+.edit{
   height: 40px;
   width: 40px;
   float: right;
@@ -35,17 +36,16 @@ $right: #eeeeee;
   z-index: 2;
   display: flex;
   }
-}
-.left.contents{
- float: left;
- height: 100%;
- width: 200px;
- background-color: $group;
- position: fixed;
- left: 0;
- top:20px;
- z-index: 2;
- .contents.nowgroup{
+  .left.contents{
+   float: left;
+   height: 100%;
+   width: 200px;
+   background-color: $group;
+   position: fixed;
+   left: 0;
+   top:20px;
+   z-index: 2;
+.contents.nowgroup{
   height: 80px;
   width: 200px;
   background-color: #253141;
@@ -53,7 +53,7 @@ $right: #eeeeee;
   position: fixed;
  }
 }
- .contents.groupname{
+.contents.groupname{
   height: 60px;
   width: 200px;
   background-color: $group;
@@ -69,7 +69,7 @@ $right: #eeeeee;
   left: 40px;
   z-index: 0;
   padding: 60px;
- .right.contentsmessage{
+.right.contentsmessage{
   height: 100px;
   width: 100%;
   position: fixed;
@@ -92,21 +92,21 @@ $right: #eeeeee;
   position: fixed;
   bottom: 0;
   z-index: 1;
- .text{
+  .text{
   position: fixed;
   left: 200px;
   z-index: 20;
   }
 }
 .foder.send{
- height: 1px;
- width: 1px;
- position:fixed;
- right: 20px;
- bottom: 25px;
- z-index: 400;
- background-color:#38AEF0;
- }
+  height: 1px;
+  width: 1px;
+  position:fixed;
+  right: 20px;
+  bottom: 25px;
+  z-index: 400;
+  background-color:#38AEF0;
+  }
 .fa-cog{
   color: red;
   z-index: 66;

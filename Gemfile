@@ -63,4 +63,3 @@ gem 'unicorn'
 gem 'erb2haml'
 
 gem 'font-awesome-rails'
-
