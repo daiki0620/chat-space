@@ -5,23 +5,23 @@
    Chatspase
  %body
   .header
-   .header.top
+   .header.news
     チャットグループが作成されました。
     .header.title
      sampleグループ
    .header.edit
-    %input{:type =>"submit",:value =>"edit",:style =>"color:#38AEF0;height:30px;font-size:20px;border: 1px solid #0066ff;padding-left:20px;padding-right:20px;"}
+    %input{type: "submit",value: "edit",style:"color:#38AEF0;height:30px;font-size:20px;border: 1px solid #0066ff;padding-left:20px;padding-right:20px;"}
   .left.contents
-   .left.contents2
+   .left.contents.nowgroup
     %i.fa.fa-cog
     %i.fa.fa-edit
-    .left.contents3
+    .left.contents.groupname
   .right.contents
-   .right.contents2
-    .right.contents3
+   .right.contents.message
+    .right.contents.messagename
   .foder
    .foder.text
-    %textarea{:placeholder =>"名前を入力してください",:rows =>"10",:cols => "80",:style =>"line-height:20px;text-align:left;margin:3px;height:50px;margin:20px;width:80%;"}
+    %textarea{placeholder: "名前を入力してください",rows: "10",cols: "80",style: "line-height:20px;text-align:left;margin:3px;height:50px;margin:20px;width:80%;"}
     %i.fa.fa-image
   .foder.send
-   %input{:type =>"submit",:value =>"SENT",:style =>"   background-color:#38AEF0;height:50px;width:80px;position:fixed;right: 40px;bottom:19px;font-size:20px;"}
+   %input{type: "submit",value: "SENT",style: "background-color:#38AEF0;height:50px;width:80px;position:fixed;right: 40px;bottom:19px;font-size:20px;"}

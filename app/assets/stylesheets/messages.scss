@@ -1,3 +1,5 @@
+$group : #2f3e51;
+$right: #eeeeee;
 .header{
  width: 100%;
  height: 80px;
@@ -5,7 +7,7 @@
  top:0;
  z-index: 1;
  background: white;
- .top{
+ .news{
   height: 20px;
   width: 100%;
   background: #38AEF0;
@@ -21,7 +23,6 @@
    left: 240px;
    display: flex;
    align-items: center;
-
  }
 }
  .edit{
@@ -39,12 +40,12 @@
  float: left;
  height: 100%;
  width: 200px;
- background-color: #2f3e51;
+ background-color: $group;
  position: fixed;
  left: 0;
  top:20px;
  z-index: 2;
- .contents2{
+ .contents.nowgroup{
   height: 80px;
   width: 200px;
   background-color: #253141;
@@ -52,33 +53,32 @@
   position: fixed;
  }
 }
- .contents3{
+ .contents.groupname{
   height: 60px;
   width: 200px;
-  background-color: #2f3e51;
+  background-color: $group;
   position: fixed;
   top:80px;
   z-index: 3;
  }
-
 .right.contents{
   width: 100%;
   height: 100%;
-  background-color: #eeeeee;
+  background-color: $right;
   position: fixed;
   left: 40px;
   z-index: 0;
   padding: 60px;
- .right.contents2{
+ .right.contentsmessage{
   height: 100px;
   width: 100%;
   position: fixed;
   top:200px;
   z-index: 0;
-  .contents3{
+  .contentsmessagename{
   height: 100px;
   width: 100%;
-  background-color: #eeeeee;
+  background-color: $right;
   position: fixed;
   top:300px;
   z-index: 0;
