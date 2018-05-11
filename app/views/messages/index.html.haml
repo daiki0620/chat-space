@@ -1,21 +1,21 @@
 %head
   %body
-    .header
-      .header_news
+    .chatroom
+      .chatroom_news
         チャットグループが作成されました。
-        .header_news.title
+        .chatroom_group_name
           sampleグループ
-      .header_edit
+      .chatroom_edit
         %input.botan{type: "submit",value: "edit"}
-  .groupname
-    .groupname_top
+  .group
+    .group_name
       %i.fa.fa-cog
       %i.fa.fa-edit
-    .groupname_menu
-  .messrge
-  .footer
-    .footer.messrges
+    .group_list
+  .chat_list
+  .messages
+    .messages_text
       %textarea.text{placeholder: "名前を入力してください",rows: "10",cols: "80"}
       %i.fa.fa-image
-    .footer_botan
+    .messages_botan
       %input.send{type: "submit",value: "SENT"}

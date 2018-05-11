@@ -1,17 +1,17 @@
-.header {
+.chatroom {
   width : 100%;
   height : 80px;
   position : fixed;
   top : 0;
   z-index : 1;
   background : white;
-  .header_news {
+  &_news {
     height : 20px;
     width : 100%;
     background : $submit;
     position : fixed;
     top : 0;
-    .title {
+    .chatroom_group_name {
       height : 20px;
       width : 200px;
       float : left;
@@ -22,8 +22,7 @@
       background-color: white;
   }
  }
-}
-.header_edit {
+&_edit {
   height : 40px;
   width : 40px;
   float : right;
@@ -39,9 +38,10 @@
     border : 1px solid #0066ff;
     padding-left : 20px;
     padding-right : 20px;
+    }
   }
-  }
-  .groupname {
+}
+  .group {
    float : left;
    height : 100%;
    width : 200px;
@@ -50,21 +50,21 @@
    left : 0;
    top : 20px;
    z-index : 2;
-    .groupname_top {
+    &_name {
       height : 80px;
       width : 200px;
       background-color : #253141;
       position : fixed;
+    &_list {
+      height : 60px;
+      width : 200px;
+      background-color : $group;
+      position : fixed;
+      top : 80px;
+   }
+  }
  }
-}
-  .groupname_menu {
-  height : 60px;
-  width : 200px;
-  background-color : $group;
-  position : fixed;
-  top : 80px;
- }
-.messrge {
+.chat_list {
   width : 100%;
   height : 100%;
   background-color : $right;
@@ -72,30 +72,32 @@
   left : 40px;
   padding : 60px;
 }
-.footer {
+.messages {
   height : 90px;
   width : 100%;
   background-color : gray;
   position : fixed;
   bottom : 0;
-  .messrges {
-  left : 200px;
+  &_text {
+    left : 200px;
     .text {
       line-height : 20px;
       text-align : left;
       height : 50px;
       margin : 20px;
       width : 80%;
+      position: relative;
+      left: 225px;
     }
   }
-}
-.footer_botan {
+&_botan {
   height : 1px;
   width : 1px;
   position : fixed;
   right : 20px;
   bottom : 25px;
   background-color : $submit;
+   }
   }
   .send{
     background-color : $submit;
@@ -123,9 +125,8 @@
   width : 20px;
   color : red;
   position : relative;
-  right : 354px;
-  top : 35px;
-  z-index : 999;
+  right : 150px;
+  top : 37px;
   float : right;
   background-color : white;
   }
