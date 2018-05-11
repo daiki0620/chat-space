@@ -5,7 +5,7 @@
   top : 0;
   z-index : 1;
   background : white;
-  .news {
+  .header_news {
     height : 20px;
     width : 100%;
     background : $submit;
@@ -23,7 +23,7 @@
   }
  }
 }
-.edit {
+.header_edit {
   height : 40px;
   width : 40px;
   float : right;
@@ -50,14 +50,14 @@
    left : 0;
    top : 20px;
    z-index : 2;
-    .top {
+    .groupname_top {
       height : 80px;
       width : 200px;
       background-color : #253141;
       position : fixed;
  }
 }
-  .menu {
+  .groupname_menu {
   height : 60px;
   width : 200px;
   background-color : $group;
@@ -72,7 +72,7 @@
   left : 40px;
   padding : 60px;
 }
-.foder {
+.footer {
   height : 90px;
   width : 100%;
   background-color : gray;
@@ -89,7 +89,7 @@
     }
   }
 }
-.foder.botan {
+.footer_botan {
   height : 1px;
   width : 1px;
   position : fixed;
