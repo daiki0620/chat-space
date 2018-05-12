@@ -1,6 +1,6 @@
 %head
   %body
-    .chatroom_group_name
+    .notification
       チャットグループが作成されました
     .group
       .group_name
@@ -13,10 +13,10 @@
       .message_group
         グループ
       .message_edit
-        %input.botan{type: "submit",value: "edit"}
+        %input.botan{type: "button",value: "edit"}
       .message_user
       .message_textarea
         %textarea.text{placeholder: "名前を入力してください",rows: "10",cols: "80"}
         .messages_botan
-        %input.send{type: "submit",value: "SENT"}
+        %input.send{type: "button",value: "SENT"}
         %i.fa.fa-image

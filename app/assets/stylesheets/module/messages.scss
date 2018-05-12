@@ -1,4 +1,4 @@
-.chatroom_group_name {
+.notification {
   height : 30px;
   width : 100%;
   position : fixed;
@@ -23,8 +23,6 @@
     background-color : #253141;
     font-size : 20px;
     line-height : 6;
-
-  }
     .fa-cog {
       color : red;
       position : fixed;
@@ -39,6 +37,7 @@
       top : 64px;
       font-size: 30px;
   }
+ }
   &_list {
     height : 30px;
     background-color : $group;
@@ -59,7 +58,8 @@
     height : 0px;
     padding : 60px;
   }
-  &_edit {height : 40px;
+  &_edit {
+  height : 40px;
   width : 40px;
   float : right;
   position : relative;
@@ -68,17 +68,11 @@
   display : flex;
   font-size : 20px;
     .botan {
-      color : #submit;
       font-size : 20px;
       border : 1px solid #0066ff;
       padding-left : 20px;
       padding-right : 20px;
-      position : relative;
-      bottom : 2px;
-      right : 164px;
-      z-index : 200;
-      float : right;
-      }
+    }
   }
   &_user {
     background-color : $right;
