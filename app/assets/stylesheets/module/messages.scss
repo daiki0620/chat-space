@@ -5,7 +5,7 @@
   top : 0;
   z-index : 20;
   background-color : $submit;
-  }
+}
 .group {
   float : left;
   height : 100%;
@@ -29,15 +29,15 @@
       left : 150px;
       top : 64px;
       font-size : 30px;
-}
+    }
     .fa-edit {
       color : black;
       position : fixed;
       left : 115px;
       top : 64px;
       font-size: 30px;
+    }
   }
- }
   &_list {
     height : 30px;
     background-color : $group;
@@ -79,7 +79,7 @@
     position : relative;
     left : 185px;
     padding : 60px;
-   }
+  }
   &_textarea {
     background-color : gray;
     height : 80px;
@@ -131,12 +131,12 @@
   float : right;
   background-color : white;
   font-size: 33px;
-  }
-  .botan {
-      position : relative;
-      bottom : 2px;
-      right : 164px;
-      color : $submit;
-      z-index : 200;
-      float : right;
-      }
+}
+.botan {
+  position : relative;
+  bottom : 2px;
+  right : 164px;
+  color : $submit;
+  z-index : 200;
+  float : right;
+}
