@@ -64,11 +64,11 @@
   width: 40px;
   float: right;
   position: relative;
-  bottom: 64px;
-  left: 93px;
+  bottom: 61px;
+  right: 80px;
   display: flex;
   font-size: 20px;
-    .botan {
+    .button {
       font-size: 20px;
       border: 1px solid #0066ff;
       padding-left: 20px;
@@ -113,7 +113,7 @@
   &_textarea {
     background-color: gray;
     height: 80px;
-    width: 100%;
+    width: calc(100% - 200px);
     position: fixed;
     bottom: 0px;
     right: 0px;
@@ -122,9 +122,9 @@
       text-align: left;
       height: 50px;
       margin: 20px;
-      width: 80%;
+      width: 87%;
       position: relative;
-      left: 225px;
+      left: 20px;
     }
     .send {
       background-color: $submit;
