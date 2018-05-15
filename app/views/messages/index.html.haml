@@ -1,19 +1,20 @@
 %head
   %body
     .notification
-      チャットグループが作成されました
     .group
       .group_name
         name
-        %i.fa.fa-cog
-        %i.fa.fa-edit
+        =link_to edit_group_path(current_user) do
+          %i.fa.fa-edit
+        =link_to edit_user_path(current_user) do
+          %i.fa.fa-cog
       .group_list
         tech
     .message
       .message_group
-        グループ
+        グループ名
       .message_edit
-        %input.button{type: "button",value: "edit"}
+        =link_to 'edit',new_group_path
       .message_user
         .message_user_title
           土曜日
