@@ -2,31 +2,20 @@
   %body
     .notification
     .group
-      .group_name
-        name
-        =link_to edit_group_path(current_user) do
-          %i.fa.fa-edit
-        =link_to edit_user_path(current_user) do
-          %i.fa.fa-cog
-      .group_list
-        tech
-    .message
-      .message_group
+      = render 'shared/side_bar'
+    .messages
+      .messages_group
         グループ名
-      .message_edit
+      .messages_edit
         =link_to 'edit',new_group_path
-      .message_user
-        .message_user_title
-          土曜日
-        .message_user_comments
-          学校ナウ
-      .message_users
-        .message_users_title
-          日曜日
-        .message_users_comments
-          学校was
-      .message_textarea
-        %textarea.text{placeholder: "type a message",rows: "10",cols: "80"}
-        .messages_botan
-        %input.send{type: "button",value: "SENT"}
-        %i.fa.fa-image
+      .messages_user
+        = render @messages
+      .messages_textarea
+        .form
+          = form_for [@group, @message] do |f|
+            = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+            .form__mask
+              = f.label :image, class: 'form__mask__image' do
+                = fa_icon 'picture-o', class: 'icon'
+                = f.file_field :image, class: 'hidden'
+            = f.submit 'Send', class: 'form__submit'

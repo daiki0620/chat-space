@@ -13,17 +13,9 @@
     .group
       - current_user.groups.each do |group|
         = link_to group_messages_path(group) do
-      .group__name
-        = group.name
-      .group__message
-        メッセージはありません。
-    .group
-      .group__name
-        グループ名
-      .group__message
-        新着メッセージ
-    .group
-      .group__name
-        グループ名
-      .group__message
-        新着メッセージ
+          .group__name
+            = group.name
+          .group__message
+
+            .group__message
+              = group.show_last_message
