@@ -104,33 +104,29 @@
   //     font-size: 12px;
   //   }
   // }
-  // &_textarea {
-  //   background-color: gray;
-  //   height: 80px;
-  //   width: calc(100% - 287px);
-  //   position: fixed;
-  //   bottom: 0px;
-  //   right: 0px;
-  //   .text {
-  //     line-height: 20px;
-  //     text-align: left;
-  //     height: 50px;
-  //     margin: 20px;
-  //     width: 87%;
-  //     position: relative;
-  //     left: 20px;
-  //   }
-  // }
+  .messages_textarea {
+    background-color: gray;
+    height: 80px;
+    width: calc(100% - 287px);
+    position: fixed;
+    bottom: 0px;
+    left: 300px;
+    // .text {
+    //   line-height: 20px;
+    //   text-align: left;
+    //   height: 50px;
+    //   margin: 20px;
+    //   width: 87%;
+    //   position: relative;
+    //   left: 20px;
+    // }
+  }
 
 .form {
   background-color: #DDDDDD;
   box-sizing: border-box;
   height: 90px;
   padding: 20px 50px 20px 40px;
-  position: fixed;
-  top: 713px;
-  left: 300px;
-  width: 80%;
   &__message {
     border: none;
     float: left;
