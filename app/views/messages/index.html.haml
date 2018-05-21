@@ -1,0 +1,21 @@
+%head
+  %body
+    .notification
+    .group
+      = render 'shared/side_bar'
+    .messages
+      .messages_group
+        グループ名
+      .messages_edit
+        =link_to 'edit',new_group_path
+      .messages_user
+        = render @messages
+      .messages_textarea
+        .form
+          = form_for [@group, @message] do |f|
+            = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+            .form__mask
+              = f.label :image, class: 'form__mask__image' do
+                = fa_icon 'picture-o', class: 'icon'
+                = f.file_field :image, class: 'hidden'
+            = f.submit 'Send', class: 'form__submit'
