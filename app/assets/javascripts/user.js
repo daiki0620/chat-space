@@ -10,23 +10,24 @@ $(function(){
                             data-user-name=${user.name}><span class="chat-group-user__btn--ad">追加</span></a>
                     </div>`
                     serch_list.append(html);
-                  }
+                    $('.chat-group-user__btn--ad').on('click',function(){
+                    $(this).empty();
+                    $('.chat-group-user__name').empty()
+                    addhtml_user(user)
+                  });
+                              }
   function addhtml_user(user){
-    $('.chat-group-user__btn--ad').on('click',function(){
-      $(this).empty();
-        $('.chat-group-user__name').empty();
           var html= `<div class='chat-group-user clearfix js-chat-member' id='chat-group-user-8'>
             <input name='group[user_ids][]' type='hidden' value=${user.user_id}>
               <p class='chat-group-user__names'>${user.name}</p>
               <a class='user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn'><span class="destroy-btn">削除</span></a>
               </div>`
               chat_user_name.append(html);
-            $('.destroy-btn').on('click',function(){
+         $('.destroy-btn').on('click',function(){
           $(this).empty();
         $('.chat-group-user__name').empty();
       });
-    });
-  }
+     };
   $('.chat-group-form__input').on("keyup", function(){
     var input = $('.chat-group-form__input').val();
     $.ajax({
@@ -40,7 +41,6 @@ $(function(){
       if (users.length !== 0) {
           users.forEach(function(user){
           buildHTML(user);
-          addhtml_user(user);
           });
           }
        })
