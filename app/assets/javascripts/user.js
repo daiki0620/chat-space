@@ -1,6 +1,4 @@
 $(function(){
-  var serch_list = $("#user-search-result");
-  var chat_user_name = $('.chat-group-user__name');
   function buildHTML(user){
     var html= `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">${user.name}
@@ -9,7 +7,7 @@ $(function(){
                           data-user-id=${user.user_id}
                             data-user-name=${user.name}><span class="chat-group-user__btn--ad">追加</span></a>
                     </div>`
-                    serch_list.append(html);
+                    $("#user-search-result").append(html);
                     $('.chat-group-user__btn--ad').on('click',function(){
                     $(this).empty();
                     $('.chat-group-user__name').empty()
@@ -22,7 +20,7 @@ $(function(){
               <p class='chat-group-user__names'>${user.name}</p>
               <a class='user-search-remove chat-group-user__btn chat-group-user__btn--remove js-remove-btn'><span class="destroy-btn">削除</span></a>
               </div>`
-              chat_user_name.append(html);
+              $('.chat-group-user__name').append(html);
          $('.destroy-btn').on('click',function(){
           $(this).empty();
         $('.chat-group-user__name').empty();

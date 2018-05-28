@@ -7,7 +7,7 @@
       .messages_group
         = @group.name
         .messages_user
-          = @group.users.each do |group|
+          = @group.users.each do |user|
             = group.name
       .messages_edit
         =link_to 'edit',new_group_path
