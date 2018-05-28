@@ -5,7 +5,10 @@
       = render 'shared/side_bar'
     .messages
       .messages_group
-        グループ名
+        = @group.name
+        .messages_user
+          = @group.users.each do |group|
+            = group.name
       .messages_edit
         =link_to 'edit',new_group_path
       .messages_user
